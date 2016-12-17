@@ -3,7 +3,7 @@ set -e
 
 dir="raspbian"
 rootfsDir="raspbian"
-tarFile="raspbian.2015.05.05.tar.xz"
+tarFile="2016-12-17-raspbian-jessie.tar.xz"
 ( set -x; mkdir -p "$rootfsDir" )
 
 (
