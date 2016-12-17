@@ -117,7 +117,7 @@ EOF
 
 (
 	set -x
-	tar --remove-files --numeric-owner -cJvf "$tarFile" -C "$rootfsDir" .
+	tar --numeric-owner -C "$rootfsDir" -c . | docker import - rpi-raspbian:$(date %Y-%m-%d-%H%M)
 )
 
 #( set -x; rm -rf "$rootfsDir" )
